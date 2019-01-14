@@ -1,0 +1,25 @@
+// Colors
+$colors: (
+  primary: #5352ed,
+  primary-bold: #3742fa,
+  white: #fff,
+  grey: #dfe4ea,
+  dark-grey: #747d8c,
+  black: #2f3542
+);
+
+// Typography
+$font: (
+  family: #{'Avenir LT Std',
+  Helvetica,
+  Arial,
+  sans-serif},
+  size-xl: 5rem,
+  size-l: 4rem,
+  size-ml: 3rem,
+  size-m: 2rem,
+  size-s: 1.7rem,
+  weight-b: 900,
+  weight-m: 600,
+  weight-l: 400
+);

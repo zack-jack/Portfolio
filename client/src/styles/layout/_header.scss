@@ -1,0 +1,47 @@
+.header {
+  color: map-get($colors, black);
+  display: grid;
+  font-weight: map-get($font, weight-m);
+  grid-column-gap: 1.6rem;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 5rem;
+  position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 1000;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    grid-column: 2 / span 10;
+    justify-content: space-between;
+  }
+
+  &__logo-box {
+    background: map-get($colors, primary);
+    height: 1.7rem;
+    margin-right: 0.8rem;
+    width: 1rem;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    align-items: center;
+    color: map-get($colors, black);
+    display: flex;
+
+    &--contact {
+      color: map-get($colors, primary);
+      margin-right: 6rem;
+    }
+  }
+
+  &__projects-icon {
+    height: 1.9rem;
+    margin-left: 0.8rem;
+    width: 1.9rem;
+  }
+}

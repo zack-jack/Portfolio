@@ -1,0 +1,33 @@
+.footer {
+  bottom: 0;
+  color: map-get($colors, dark-grey);
+  display: grid;
+  font-size: map-get($font, size-s);
+  font-weight: map-get($font, weight-l);
+  grid-column-gap: 1.6rem;
+  grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 5rem;
+  position: sticky;
+  text-transform: uppercase;
+  z-index: 1000;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    grid-column: 2 / span 10;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    grid-column: 2 / span 5;
+  }
+
+  &__link {
+    color: map-get($colors, dark-grey);
+
+    &:first-of-type {
+      margin-right: 6rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-family: map-get($font, family);
+  font-size: 62.5%; // Base 10
+}
+
+body {
+  line-height: 1;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: map-get($font, size-xl);
+  font-weight: map-get($font, weight-b);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: map-get($font, size-ml);
+  font-weight: map-get($font, weight-m);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: map-get($font, size-s);
+}
+
+a {
+  font-size: map-get($font, size-s);
+  text-decoration: none;
+}

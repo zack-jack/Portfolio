@@ -1,0 +1,77 @@
+.details {
+  align-items: center;
+  display: grid;
+  grid-column: 1 / span 12;
+  grid-column-gap: 1.6rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+
+  &__rectangle-text {
+    align-items: flex-end;
+    color: map-get($colors, white);
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    height: 25.9rem;
+    justify-content: space-between;
+    text-align: right;
+    z-index: 1000;
+  }
+
+  &__rectangle-heading {
+    display: flex;
+    flex-direction: column;
+    font-size: map-get($font, size-xl);
+    font-weight: map-get($font, weight-b);
+    height: 22.5rem;
+    justify-content: flex-end;
+    margin: 0 -2px -1.8rem 0;
+  }
+
+  &__arrow-icon {
+    fill: map-get($colors, white);
+    height: 3.4rem;
+    width: 3.4rem;
+    transform: rotate(135deg);
+  }
+
+  &__rectangle {
+    background: map-get($colors, primary);
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    height: 25.9rem;
+    margin-left: -50rem;
+    z-index: -1;
+  }
+
+  &__line {
+    background: map-get($colors, grey);
+    grid-column: 7 / span 1;
+    height: 5px;
+    margin-bottom: 22.5rem;
+    width: 100%;
+  }
+
+  &__copy {
+    color: map-get($colors, black);
+    grid-row: 1;
+    grid-column: 8 / span 4;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    font-size: map-get($font, size-xl);
+    font-weight: map-get($font, weight-m);
+    line-height: 1.2;
+    margin-bottom: 2.7rem;
+  }
+
+  &__paragraph {
+    line-height: 1.5;
+    margin-bottom: 1.7rem;
+  }
+}
