@@ -8,10 +8,19 @@
 // Layout
 
 @import 'layout/header';
+@import 'layout/footer';
 @import 'layout/landing';
 @import 'layout/details';
-@import 'layout/footer';
+@import 'layout/contact';
+@import 'layout/contact-form';
+@import 'layout/projects';
+@import 'layout/project';
 
 // Components
+@import 'components/button';
+@import 'components/field';
+@import 'components/heading';
 @import 'components/section';
+@import 'components/text-area';
 @import 'components/wrapper';
+@import 'components/field-error';

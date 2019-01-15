@@ -1,0 +1,21 @@
+.projects {
+  display: grid;
+  grid-column: 1 / span 12;
+  grid-column-gap: 1.6rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+
+  &__gallery {
+    align-self: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1 / span 12;
+    grid-column-gap: 6rem;
+    grid-row: 1;
+    grid-row-gap: 6rem;
+    grid-template-columns: repeat(3, 14vw);
+    grid-template-rows: repeat(2, 14vw);
+    justify-content: center;
+    margin-top: 13.8rem;
+  }
+}

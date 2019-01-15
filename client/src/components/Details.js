@@ -7,8 +7,9 @@ const Details = () => {
     <div className="details section wrapper">
       <div className="details__rectangle-text">
         <img src={arrowIcon} alt="arrow icon" className="details__arrow-icon" />
+
         <h2 className="details__rectangle-heading">
-          Let's start a project <div>together</div>
+          Let's start a new <div>project</div>
         </h2>
         <div />
       </div>
@@ -19,7 +20,7 @@ const Details = () => {
 
       <div className="details__copy">
         <h2 className="details__heading">
-          Design &amp; <div>Development</div>
+          Design to <div>Deployment</div>
         </h2>
         <p className="details__paragraph">
           Lyft everyday carry meditation microdosing, copper mug bicycle rights

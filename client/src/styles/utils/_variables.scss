@@ -3,9 +3,11 @@ $colors: (
   primary: #5352ed,
   primary-bold: #3742fa,
   white: #fff,
+  light-grey: #f1f2f6,
   grey: #dfe4ea,
   dark-grey: #747d8c,
-  black: #2f3542
+  black: #2f3542,
+  error: #ff3f34
 );
 
 // Typography
@@ -19,6 +21,7 @@ $font: (
   size-ml: 3rem,
   size-m: 2rem,
   size-s: 1.7rem,
+  size-xs: 1.4rem,
   weight-b: 900,
   weight-m: 600,
   weight-l: 400

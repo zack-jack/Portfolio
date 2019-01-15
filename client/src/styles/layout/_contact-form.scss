@@ -1,0 +1,47 @@
+.contact-form {
+  align-self: center;
+  grid-column: 4 / span 5;
+  grid-row: 1;
+
+  &__fieldset {
+    margin-bottom: 1.8rem;
+
+    &:last-of-type {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__label {
+    color: map-get($colors, black);
+    font-family: map-get($font, family);
+    font-size: map-get($font, size-m);
+    font-weight: map-get($font, weight-m);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__field,
+  &__text-area {
+    margin-top: 1rem;
+  }
+
+  &__error {
+    color: map-get($colors, error);
+    font-family: map-get($font, family);
+    font-size: map-get($font, size-xs);
+    font-weight: map-get($font, weight-m);
+    height: 1.4rem;
+    padding-top: 0.5rem;
+  }
+
+  &__button-content {
+    align-items: center;
+    display: flex;
+  }
+
+  &__send-icon {
+    height: 2rem;
+    margin-left: 2rem;
+    margin-right: -1rem;
+  }
+}

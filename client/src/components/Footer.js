@@ -7,10 +7,20 @@ const Footer = () => {
     <div className="footer wrapper">
       <div className="footer__container">
         <div className="footer__links">
-          <a href="#" className="footer__link">
+          <a
+            href="https://github.com/zackjacksongit/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
+          >
             Github
           </a>
-          <a href="#" className="footer__link">
+          <a
+            href="https://www.linkedin.com/in/zack-jackson/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
+          >
             LinkedIn
           </a>
         </div>

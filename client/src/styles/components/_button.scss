@@ -1,0 +1,26 @@
+.button {
+  background: map-get($colors, primary);
+  border: solid 1px;
+  border-color: map-get($colors, primary);
+  color: map-get($colors, white);
+  cursor: pointer;
+  display: inline-block;
+  font-family: map-get($font, family);
+  font-size: map-get($font, size-m);
+  font-weight: map-get($font, weight-m);
+  outline: 0;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &--disabled,
+  &:disabled {
+    background: map-get($colors, light-grey);
+    border-color: map-get($colors, light-grey);
+    cursor: default;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}

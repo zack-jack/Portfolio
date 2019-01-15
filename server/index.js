@@ -12,9 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(express.static(publicPath));
-app.use('/', sendMail);
+app.use('/api', sendMail);
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
