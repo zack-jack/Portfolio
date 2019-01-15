@@ -11,6 +11,7 @@ import Landing from './components/Landing';
 import Details from './components/Details';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
+import NotFound from './components/NotFound';
 
 ReactDOM.render(
   <Router>
@@ -27,6 +28,7 @@ ReactDOM.render(
       />
       <Route path="/contact" component={Contact} />
       <Route path="/projects" component={Projects} />
+      <Route component={NotFound} />
     </App>
   </Router>,
   document.getElementById('root')
