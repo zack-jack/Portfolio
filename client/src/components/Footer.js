@@ -11,7 +11,7 @@ const Footer = () => {
             href="https://github.com/zackjacksongit/"
             target="_blank"
             rel="noopener noreferrer"
-            className="footer__link"
+            className="footer__link link"
           >
             Github
           </a>
@@ -19,7 +19,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/zack-jackson/"
             target="_blank"
             rel="noopener noreferrer"
-            className="footer__link"
+            className="footer__link link"
           >
             LinkedIn
           </a>

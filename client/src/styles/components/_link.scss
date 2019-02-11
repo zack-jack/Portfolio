@@ -1,0 +1,12 @@
+.link {
+  &:hover {
+    background: map-get($colors, light-grey);
+  }
+
+  &--primary {
+    &:hover {
+      background: map-get($colors, primary);
+      color: map-get($colors, white);
+    }
+  }
+}

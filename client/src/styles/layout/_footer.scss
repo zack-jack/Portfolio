@@ -1,4 +1,5 @@
 .footer {
+  background: map-get($colors, trans-white);
   bottom: 0;
   color: map-get($colors, dark-grey);
   display: grid;
@@ -6,6 +7,7 @@
   font-weight: map-get($font, weight-l);
   grid-column-gap: 1.6rem;
   grid-template-columns: repeat(12, 1fr);
+  padding-top: 5rem;
   padding-bottom: 5rem;
   position: sticky;
   text-transform: uppercase;
@@ -21,13 +23,15 @@
   &__links {
     display: flex;
     grid-column: 2 / span 5;
+    margin-bottom: -1rem;
   }
 
   &__link {
     color: map-get($colors, dark-grey);
+    padding: 1rem;
 
     &:first-of-type {
-      margin-right: 6rem;
+      margin-right: 4rem;
     }
   }
 }

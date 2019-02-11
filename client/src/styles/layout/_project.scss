@@ -1,5 +1,31 @@
 .project {
-  background: map-get($colors, grey);
-  height: 14vw;
-  width: 14vw;
+  height: 35rem;
+  width: 35rem;
+
+  &__preview-image {
+    width: 100%;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    width: 80%;
+  }
+
+  &__button {
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+      background: map-get($colors, white);
+      color: map-get($colors, primary);
+      margin-bottom: 0;
+
+      &:hover {
+        background: map-get($colors, primary);
+        color: map-get($colors, white);
+      }
+    }
+  }
 }
