@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 const Project = props => {
   return (
@@ -9,11 +10,21 @@ const Project = props => {
         className="project__preview-image"
       />
       <div className="project__actions">
-        <button className="button project__button">Live Demo</button>
-        <button className="button project__button">View Code</button>
+        <button
+          className="button button--small project__button"
+          onClick={() => window.open(props.liveLink, '_blank')}
+        >
+          Live Demo
+        </button>
+        <button
+          className="button button--small project__button"
+          onClick={() => window.open(props.codeLink, '_blank')}
+        >
+          View Code
+        </button>
       </div>
     </div>
   );
 };
 
-export default Project;
+export default withRouter(Project);

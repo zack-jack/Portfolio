@@ -15,6 +15,11 @@
   text-transform: uppercase;
   white-space: nowrap;
 
+  &--small {
+    font-size: map-get($font, size-s);
+    padding: 0.5rem 1.5rem;
+  }
+
   &--disabled,
   &:disabled {
     background: map-get($colors, light-grey);
