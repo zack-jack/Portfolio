@@ -18,5 +18,27 @@
     grid-template-rows: repeat(2, 35rem);
     justify-content: center;
     margin-top: 18rem;
+
+    @include tablet-large {
+      grid-column-gap: 4rem;
+      grid-row-gap: 6rem;
+      grid-template-columns: repeat(2, 33rem);
+      grid-template-rows: repeat(2, 33rem);
+    }
+
+    @include tablet {
+      grid-column-gap: 3rem;
+      grid-row-gap: 5rem;
+      grid-template-columns: repeat(2, 28rem);
+      grid-template-rows: repeat(2, 28rem);
+      margin-top: 14rem;
+    }
+
+    @include phone {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }

@@ -3,7 +3,22 @@
   height: 37rem;
   width: 35rem;
 
+  @include tablet-large {
+    height: 35rem;
+    width: 33rem;
+  }
+
+  @include tablet {
+    height: 31rem;
+    width: 28rem;
+  }
+
+  @include phone {
+    margin-bottom: 4rem;
+  }
+
   &__preview-image {
+    border-bottom: 1px solid map-get($colors, grey);
     filter: saturate(0%);
     opacity: 0.5;
     transition: 0.5s;
