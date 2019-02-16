@@ -1,3 +1,7 @@
 .section {
-  height: calc(100vh - 6.9rem - 6.7rem);
+  height: calc(100vh - 13.9rem - 13.6rem);
+
+  @include phone {
+    height: calc(100vh - 22.3rem - 13.2rem);
+  }
 }

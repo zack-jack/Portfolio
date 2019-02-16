@@ -7,6 +7,10 @@
   grid-template-rows: 1fr;
   margin-top: -6.9rem;
 
+  @include phone {
+    margin-top: 0;
+  }
+
   &__content {
     display: grid;
     grid-column: 1 / span 12;
@@ -14,6 +18,10 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
     margin-top: -7.4rem;
+
+    @include phone {
+      margin-top: -4rem;
+    }
   }
 
   &__rectangle {
@@ -24,6 +32,23 @@
     margin-left: calc(10% - 0.75rem);
     width: calc(90% + 0.8rem + 0.75rem);
     z-index: -1;
+
+    @include desktop {
+      grid-column: 2 / span 7;
+      margin-left: calc(((100vw - 16vw) / 12) - 0.8rem);
+    }
+
+    @include tablet-large {
+      grid-column: 2 / span 9;
+      width: calc(90% + 0.8rem);
+    }
+
+    @include phone {
+      grid-column: 1 / span 11;
+      height: 13.6rem;
+      margin-left: calc(((100vw - 2vw) / 12) - 0.8rem);
+      width: 100%;
+    }
   }
 
   &__line-container {
@@ -32,6 +57,14 @@
     grid-row: 1;
     margin-top: 5.75rem;
     z-index: 2000;
+
+    @include desktop {
+      grid-column: 2 / span 2;
+    }
+
+    @include phone {
+      grid-column: 1 / span 2;
+    }
   }
 
   &__line {
@@ -55,6 +88,18 @@
   &__subheading {
     grid-column: 3 / span 4;
     grid-row: 1;
+
+    @include desktop {
+      grid-column: 4 / span 5;
+    }
+
+    @include tablet-large {
+      grid-column: 4 / span 7;
+    }
+
+    @include phone {
+      grid-column: 3 / span 9;
+    }
   }
 
   &__title {
@@ -62,6 +107,15 @@
     flex-direction: column;
     color: map-get($colors, white);
     padding-top: 3.4rem;
+
+    @include tablet-large {
+      font-size: map-get($font, size-l);
+      padding-top: 4.4rem;
+    }
+
+    @include phone-small {
+      font-size: map-get($font, size-ml);
+    }
 
     &--new-line {
       padding-top: 0;
@@ -71,5 +125,10 @@
   &__subtitle {
     color: map-get($colors, black);
     margin-top: 17.3rem;
+
+    @include phone {
+      font-size: map-get($font, size-xs);
+      margin-top: 15.3rem;
+    }
   }
 }

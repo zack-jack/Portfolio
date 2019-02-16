@@ -9,28 +9,32 @@ const Details = () => {
         <img src={arrowIcon} alt="arrow icon" className="details__arrow-icon" />
 
         <h2 className="details__rectangle-heading">
-          Let's start a new <div>project</div>
+          Let's start a <div>project together</div>
         </h2>
         <div />
       </div>
 
       <div className="details__rectangle" />
 
-      <div className="details__line" />
+      <div className="details__body">
+        <div className="details__line" />
 
-      <div className="details__copy">
-        <h2 className="details__heading">
-          Design to <div>Deployment</div>
-        </h2>
-        <p className="details__paragraph">
-          Lyft everyday carry meditation microdosing, copper mug bicycle rights
-          air plant tilde biodiesel authentic cliche try-hard poke.
-        </p>
-        <p className="details__paragraph">
-          Swag trust fund williamsburg meditation, stumptown vexillologist you
-          probably haven't heard of them shabby chic enamel pin la croix
-          polaroid.
-        </p>
+        <div className="details__copy">
+          <h2 className="details__heading">
+            Design to <div>Deployment</div>
+          </h2>
+          <p className="details__paragraph">
+            In the era of digital marketing, your online brand can make or break
+            your business. In partnering with you, I can provide the tools
+            necessary to build your online brand presence and better engage your
+            customers through elegant digital solutions.
+          </p>
+          <p className="details__paragraph">
+            From concept sketch to web browser, every step my process is
+            meticulously thought out to meld a synchronous relationship between
+            good UI/UX design and cutting edge development technologies.
+          </p>
+        </div>
       </div>
     </div>
   );

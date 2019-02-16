@@ -11,11 +11,29 @@
   top: 0;
   z-index: 10000;
 
+  @include phone {
+    padding: 2rem 0 1rem 0;
+  }
+
   &__container {
     align-items: center;
     display: flex;
     grid-column: 2 / span 10;
     justify-content: space-between;
+
+    @include tablet-large {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    @include tablet-large {
+      margin-bottom: 2rem;
+    }
+
+    @include phone {
+      margin-bottom: 0;
+    }
   }
 
   &__logo-box {
@@ -24,8 +42,24 @@
     width: 2rem;
   }
 
+  &__logo-text {
+    width: 14rem;
+  }
+
   &__links {
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    @include tablet-large {
+      justify-content: center;
+    }
+
+    @include phone-small {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -34,6 +68,19 @@
     display: flex;
     margin-right: 4rem;
     padding: 1rem;
+
+    @include tablet {
+      margin-right: 2rem;
+    }
+
+    @include phone {
+      font-size: map-get($font, size-xs);
+    }
+
+    @include phone-small {
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+    }
 
     &:last-of-type {
       margin-right: 0;
@@ -46,7 +93,7 @@
 
   &__projects-icon {
     height: 1.9rem;
-    margin-left: 0.8rem;
+    margin-left: 1rem;
     width: 1.9rem;
   }
 }

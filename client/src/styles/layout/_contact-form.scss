@@ -1,20 +1,29 @@
 .contact-form {
   align-self: center;
-  grid-column: 4 / span 5;
+  grid-column: 4 / span 7;
   grid-row: 1;
+  margin-top: 9rem;
+
+  &__top-row {
+    display: flex;
+  }
 
   &__fieldset {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
+
+    &:first-of-type {
+      margin-right: 2rem;
+    }
 
     &:last-of-type {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
   }
 
   &__label {
     color: map-get($colors, black);
     font-family: map-get($font, family);
-    font-size: map-get($font, size-m);
+    font-size: map-get($font, size-xs);
     font-weight: map-get($font, weight-m);
     margin-bottom: 1.5rem;
     text-transform: uppercase;

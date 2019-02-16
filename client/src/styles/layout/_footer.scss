@@ -7,31 +7,61 @@
   font-weight: map-get($font, weight-l);
   grid-column-gap: 1.6rem;
   grid-template-columns: repeat(12, 1fr);
-  padding-top: 5rem;
   padding-bottom: 5rem;
+  padding-top: 5rem;
   position: sticky;
   text-transform: uppercase;
   z-index: 10000;
+
+  @include phone {
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
 
   &__container {
     align-items: center;
     display: flex;
     grid-column: 2 / span 10;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__links {
     display: flex;
     grid-column: 2 / span 5;
     margin-bottom: -1rem;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
   }
 
   &__link {
     color: map-get($colors, dark-grey);
     padding: 1rem;
 
+    @include phone {
+      font-size: map-get($font, size-xs);
+    }
+
     &:first-of-type {
       margin-right: 4rem;
+
+      @include tablet {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__copyright-text {
+    @include phone {
+      font-size: map-get($font, size-xs);
     }
   }
 }

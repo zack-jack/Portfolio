@@ -5,6 +5,11 @@
   grid-column-gap: 1.6rem;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
+  margin-top: 12.6rem;
+
+  @include tablet-large {
+    grid-template-rows: 0.5fr 1fr;
+  }
 
   &__rectangle-text {
     align-items: flex-end;
@@ -13,10 +18,22 @@
     flex-direction: column;
     grid-column: 1 / span 5;
     grid-row: 1;
-    height: 25.9rem;
+    height: 20.9rem;
     justify-content: space-between;
     text-align: right;
     z-index: 1000;
+
+    @include laptop {
+      grid-column: 1 / span 6;
+      height: 18.9rem;
+      margin-right: 2rem;
+    }
+
+    @include tablet-large {
+      grid-column: 1 / span 9;
+      height: 10.9rem;
+      justify-content: flex-end;
+    }
   }
 
   &__rectangle-heading {
@@ -24,9 +41,23 @@
     flex-direction: column;
     font-size: map-get($font, size-xl);
     font-weight: map-get($font, weight-b);
-    height: 22.5rem;
+    height: 17.5rem;
     justify-content: flex-end;
     margin: 0 -4px -1.8rem 0;
+    width: 70rem;
+
+    @include desktop-small {
+      font-size: map-get($font, size-l);
+    }
+
+    @include laptop {
+      grid-column: 1 / span 6;
+      height: 15.5rem;
+    }
+
+    @include tablet-large {
+      grid-column: 1 / span 9;
+    }
   }
 
   &__arrow-icon {
@@ -34,29 +65,62 @@
     height: 3.4rem;
     width: 3.4rem;
     transform: rotate(135deg);
+
+    @include tablet-large {
+      display: none;
+    }
   }
 
   &__rectangle {
     background: map-get($colors, primary);
     grid-column: 1 / span 5;
     grid-row: 1;
-    height: 25.9rem;
+    height: 20.9rem;
     margin-left: -50rem;
     z-index: -1;
+
+    @include laptop {
+      grid-column: 1 / span 6;
+      height: 18.9rem;
+      margin-right: 2rem;
+    }
+
+    @include tablet-large {
+      grid-column: 1 / span 9;
+      height: 12.9rem;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-column: 7 / span 5;
+    grid-column-gap: 1.6rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
+    @include tablet-large {
+      grid-column: 2 / span 10;
+      grid-row: 2;
+    }
   }
 
   &__line {
     background: map-get($colors, grey);
-    grid-column: 7 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 1;
     height: 5px;
-    margin-bottom: 22.5rem;
+    margin-top: 2.5rem;
     width: 100%;
+
+    @include desktop-small {
+      margin-top: 2rem;
+    }
   }
 
   &__copy {
     color: map-get($colors, black);
-    grid-row: 1;
-    grid-column: 8 / span 4;
+    grid-column: 2 / span 4;
+    max-width: 50rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -68,10 +132,15 @@
     font-weight: map-get($font, weight-m);
     line-height: 1.2;
     margin-bottom: 2.7rem;
+
+    @include desktop-small {
+      font-size: map-get($font, size-l);
+    }
   }
 
   &__paragraph {
-    line-height: 1.5;
+    line-height: 1.75;
     margin-bottom: 1.7rem;
+    text-align: justify;
   }
 }

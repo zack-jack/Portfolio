@@ -18,35 +18,37 @@ const ContactForm = ({
 
   return (
     <Form className="contact-form">
-      <div className="contact-form__fieldset">
-        <label className="contact-form__label">Name</label>
-        <Field
-          name="name"
-          onChange={handleChange}
-          className={
-            errors.name && touched.name
-              ? 'contact-form__field field field-error'
-              : 'contact-form__field field'
-          }
-        />
-        <div className="contact-form__error">
-          {errors.name && touched.name ? errors.name : ''}
+      <div className="contact-form__top-row">
+        <div className="contact-form__fieldset">
+          <label className="contact-form__label">Name</label>
+          <Field
+            name="name"
+            onChange={handleChange}
+            className={
+              errors.name && touched.name
+                ? 'contact-form__field field field-error'
+                : 'contact-form__field field'
+            }
+          />
+          <div className="contact-form__error">
+            {errors.name && touched.name ? errors.name : ''}
+          </div>
         </div>
-      </div>
 
-      <div className="contact-form__fieldset">
-        <label className="contact-form__label">Email</label>
-        <Field
-          name="email"
-          onChange={handleChange}
-          className={
-            errors.email && touched.email
-              ? 'contact-form__field field field-error'
-              : 'contact-form__field field'
-          }
-        />
-        <div className="contact-form__error">
-          {errors.email && touched.email ? errors.email : ''}
+        <div className="contact-form__fieldset">
+          <label className="contact-form__label">Email</label>
+          <Field
+            name="email"
+            onChange={handleChange}
+            className={
+              errors.email && touched.email
+                ? 'contact-form__field field field-error'
+                : 'contact-form__field field'
+            }
+          />
+          <div className="contact-form__error">
+            {errors.email && touched.email ? errors.email : ''}
+          </div>
         </div>
       </div>
 

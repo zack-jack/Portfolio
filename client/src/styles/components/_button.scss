@@ -4,9 +4,9 @@
   border-color: map-get($colors, primary);
   color: map-get($colors, white);
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   font-family: map-get($font, family);
-  font-size: map-get($font, size-m);
+  font-size: map-get($font, size-s);
   font-weight: map-get($font, weight-m);
   outline: 0;
   padding: 1rem 3rem;
