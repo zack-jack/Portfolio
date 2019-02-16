@@ -1,13 +1,13 @@
 const express = require('express');
+require('dotenv').config();
 const nodemailer = require('nodemailer');
-const credentials = require('./mailerConfig');
 const router = express.Router();
 
 const transport = {
   host: 'smtp.gmail.com',
   auth: {
-    user: credentials.USER,
-    pass: credentials.PASSWORD
+    user: process.env.NODE_MAILER_USER,
+    pass: process.env.NODE_MAILER_PASSWORD
   }
 };
 
