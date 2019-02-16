@@ -14,6 +14,27 @@
   text-transform: uppercase;
   z-index: 1000;
 
+  @include desktop {
+    grid-column: 1 / span 6;
+  }
+
+  @include tablet-large {
+    font-size: map-get($font, size-l);
+    grid-column: 1 / span 9;
+  }
+
+  @include tablet {
+    margin-top: 0;
+  }
+
+  @include phone {
+    grid-column: 1 / span 11;
+  }
+
+  @include phone-small {
+    font-size: map-get($font, size-ml);
+  }
+
   &__rectangle {
     background: map-get($colors, primary);
     grid-column: 1 / span 5;
@@ -22,5 +43,21 @@
     margin-left: -50rem;
     margin-top: 1rem;
     z-index: -1;
+
+    @include desktop {
+      grid-column: 1 / span 6;
+    }
+
+    @include tablet-large {
+      grid-column: 1 / span 9;
+    }
+
+    @include tablet {
+      margin-top: 0;
+    }
+
+    @include phone {
+      grid-column: 1 / span 11;
+    }
   }
 }

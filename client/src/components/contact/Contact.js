@@ -44,7 +44,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact section wrapper">
+      <div className="contact wrapper">
         <h2 className="contact__heading heading">Get in Touch</h2>
         <div className="contact__rectangle heading__rectangle" />
 

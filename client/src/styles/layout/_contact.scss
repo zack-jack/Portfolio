@@ -4,4 +4,14 @@
   grid-column-gap: 1.6rem;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
+  height: calc(100vh - 14.6rem - 12.6rem);
+
+  @include tablet-large {
+    height: calc(100vh - 20.5rem - 12.6rem);
+  }
+
+  @include phone {
+    height: 100%;
+    padding-bottom: 4rem;
+  }
 }

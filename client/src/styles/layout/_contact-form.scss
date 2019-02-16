@@ -4,8 +4,24 @@
   grid-row: 1;
   margin-top: 9rem;
 
+  @include tablet-large {
+    grid-column: 2 / span 10;
+  }
+
+  @include tablet {
+    margin-top: 4rem;
+  }
+
+  @include phone {
+    margin-top: 12rem;
+  }
+
   &__top-row {
     display: flex;
+
+    @include phone {
+      flex-direction: column;
+    }
   }
 
   &__fieldset {
@@ -13,6 +29,10 @@
 
     &:first-of-type {
       margin-right: 2rem;
+
+      @include phone {
+        margin-right: 0;
+      }
     }
 
     &:last-of-type {
