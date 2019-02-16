@@ -4,7 +4,7 @@ import arrowIcon from '../images/icon-arrow.svg';
 
 const Details = () => {
   return (
-    <div className="details section wrapper">
+    <div className="details wrapper">
       <div className="details__rectangle-text">
         <img src={arrowIcon} alt="arrow icon" className="details__arrow-icon" />
 

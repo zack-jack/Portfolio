@@ -2,7 +2,7 @@ import React from 'react';
 
 const Landing = () => {
   return (
-    <div className="landing section wrapper">
+    <div className="landing wrapper">
       <div className="landing__content">
         <div className="landing__rectangle" />
 

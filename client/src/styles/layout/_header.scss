@@ -12,6 +12,7 @@
   z-index: 10000;
 
   @include phone {
+    background: map-get($colors, white);
     padding: 2rem 0 1rem 0;
   }
 
